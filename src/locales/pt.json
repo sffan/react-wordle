@@ -1,0 +1,48 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "welcome": "Venha todos os dias para desfrutar de uma nova WORDLE a cada dia! ",
+    "hint": "Dica:",
+    "caption": "Wordle de Xxx"
+  },
+  "help": {
+    "title": "COMO JOGAR",
+    "content": "Faça na WORDLE 6 tentativas de adivinhação.\n\nCada adivinhação deve ser uma palavra válida de 5 letras. Pressione o botão \"Enter\" para enviar.\n\nDepois de cada tentativa, a cor das letras mudará para mostrar o quão perto estava sua tentativa da palavra.",
+    "example": "exemplos",
+    "exp1": "JESUS",
+    "exp1_desc": "\"J\" está na palavra e no lugar correto.",
+    "exp2": "ADORA",
+    "exp2_desc": "\"D\" está na palavra, mas num lugar errado.",
+    "exp3": "SOBRE",
+    "exp3_desc": "\"R\" não está em nenhum lugar da palavra."
+  },
+  "alert": {
+    "not_in_wordlist": "Não na lista de palavras",
+    "not_enough_letter": "Letras insuficientes",
+    "splendid": "Esplêndido",
+    "awesome": "Fantástico",
+    "great": "Ótimo",
+    "link_copied": "Link copiado",
+    "guide": "Tente uma palavra de 5 letras",
+    "not_a_valid_word": "Não é uma palavra válida",
+    "you_won": "VOCÊ GANHOU!",
+    "answer_with_owner": "A palavra de Xxx é \"XXXXX\"",
+    "answer": "A resposta é {0}",
+    "you_failed": "Você falhou, a palavra era \"XXXXX\"."
+  },
+  "win": {
+    "share": "PARTILHAR",
+    "create_link": "CRIAR LINK"
+  },
+  "stat": {
+    "statistics": "Estatísticas",
+    "current_streak": "Sequência Atual",
+    "max_streak": "Maior Sequência"
+  },
+  "share": {
+    "text3": "#Wordle #DesafioDiariodePalavras #Wordle Ilimitado ",
+    "text1": "Crie seu próprio desafio Wordle",
+    "text2": "BAIXAR",
+    "customize": "PERSONALIZAR"
+  }
+}

@@ -6,11 +6,11 @@ import { shareStatus } from '../../lib/share'
 import { tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
-  STATISTICS_TITLE,
   GUESS_DISTRIBUTION_TEXT,
   NEW_WORD_TEXT,
-  SHARE_TEXT,
+  capitalizeFirstLetter,
 } from '../../constants/strings'
+import i18n from '../../i18n'
 
 type Props = {
   isOpen: boolean
@@ -34,7 +34,7 @@ export const StatsModal = ({
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
-        title={STATISTICS_TITLE}
+        title={i18n.t("stat.statistics")}
         isOpen={isOpen}
         handleClose={handleClose}
       >
@@ -44,7 +44,7 @@ export const StatsModal = ({
   }
   return (
     <BaseModal
-      title={STATISTICS_TITLE}
+      title={i18n.t("stat.statistics")}
       isOpen={isOpen}
       handleClose={handleClose}
     >
@@ -71,7 +71,7 @@ export const StatsModal = ({
               handleShare()
             }}
           >
-            {SHARE_TEXT}
+            {capitalizeFirstLetter(i18n.t("win.share"))}
           </button>
         </div>
       )}

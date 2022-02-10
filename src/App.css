@@ -1,3 +1,33 @@
 html.dark {
   background-color: rgb(15, 23, 42);
 }
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.cell-empty {
+  background-color: #e7eff6;
+}
+.cell-correct {
+  background: linear-gradient(180deg, #19a48b 0%, #05b494 100%);
+}
+.cell-present {
+  /* box-shadow: 1.0077093798760471e-15px 5.142857074737549px 10.285714149475098px 0px #2D22043D; */
+  box-shadow: 0px 2px 3px 0px rgba(45, 34, 4, 0.24), inset 0 -2px 2px 0 #ca8704,
+    inset 0 2px 2px #ffc41a;
+}
+img.del-btn {
+  width: 50%;
+}
+.key-default {
+  background: linear-gradient(180deg, #6d6d6d 0%, #525252 100%);
+}
+.key-absent {
+  background-color: #3c3f59;
+  color: #a3a3ae;
+}
+.key-correct {
+  background: linear-gradient(180deg, #19a48b 0%, #05b494 100%);
+}
+.key-present {
+  box-shadow: inset 0 -2px 2px 0 #ca8704, inset 0 2px 2px #ffc41a;
+}

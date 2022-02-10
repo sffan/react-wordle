@@ -23,15 +23,15 @@ export const Key = ({
   const keyDelayMs = REVEAL_TIME_MS * MAX_WORD_LENGTH
 
   const classes = classnames(
-    'flex items-center justify-center rounded mx-0.5 text-xs font-bold cursor-pointer select-none dark:text-white',
+    'flex items-center justify-center rounded-lg mx-0.5 text-xl font-bold cursor-pointer select-none dark:text-white',
     {
       'transition ease-in-out': isRevealing,
-      'bg-slate-200 dark:bg-slate-600 hover:bg-slate-300 active:bg-slate-400':
+      'dark:bg-slate-600 hover:bg-slate-300 active:bg-slate-400 text-white key-default':
         !status,
-      'bg-slate-400 dark:bg-slate-800 text-white': status === 'absent',
-      'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white':
+      'dark:bg-slate-800 text-white key-absent': status === 'absent',
+      'bg-green-500 hover:bg-green-600 active:bg-green-700 text-white key-correct':
         status === 'correct',
-      'bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 text-white':
+      'bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 text-white key-present':
         status === 'present',
     }
   )
@@ -39,7 +39,7 @@ export const Key = ({
   const styles = {
     transitionDelay: isRevealing ? `${keyDelayMs}ms` : 'unset',
     width: `${width}px`,
-    height: '58px',
+    height: '50px',
   }
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {

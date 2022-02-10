@@ -1,0 +1,48 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "welcome": "Vieni ogni giorno per goderti un nuovo WORDLE ogni giorno!",
+    "hint": "Suggerimento:",
+    "caption": "Wordle de Xxx"
+  },
+  "help": {
+    "title": "COME GIOCARE",
+    "content": "Indovina il WORDLE in 6 tentativi.\n\nOgni ipotesi deve essere una parola valida di 5 lettere. Premi il pulsante \"Invio\" per inviare.\n\nDopo ogni ipotesi, il colore delle til cambierà per mostrare quanto la tua ipotesi fosse vicina alla parola.",
+    "example": "esempi",
+    "exp1": "NOTTE",
+    "exp1_desc": "N è nella parola e nel punto corretto.",
+    "exp2": "REALE",
+    "exp2_desc": "E è nella parola ma nel posto sbagliato.",
+    "exp3": "LIBRO",
+    "exp3_desc": "R non è nella parola ma in qualsiasi punto."
+  },
+  "alert": {
+    "not_in_wordlist": "Non nell'elenco di parole",
+    "not_enough_letter": "Lettera insufficiente",
+    "splendid": "Splendida",
+    "awesome": "Molto Bene",
+    "great": "Fantastica",
+    "link_copied": "Link URL copiato",
+    "guide": "Indovina una parola di 5 lettere",
+    "not_a_valid_word": "Non una parola valida",
+    "you_won": "HAI VINTO!",
+    "answer_with_owner": "La parola di Xxx è \"XXXXX\"",
+    "answer": "La risposta è {0}",
+    "you_failed": "Hai fallito, la parola era \"XXXXX\""
+  },
+  "win": {
+    "share": "CONDIVIDERE",
+    "create_link": "CREA COLLEGAMENTO"
+  },
+  "stat": {
+    "statistics": "Statistiche",
+    "current_streak": "Striscia di Corrente",
+    "max_streak": "Striscia Max"
+  },
+  "share": {
+    "text3": "#Wordle #dailywordchallenge #Wordle Unlimited",
+    "text1": "Crea la tua sfida Wordle",
+    "text2": "SCARICARE",
+    "customize": "PERSONALIZZARE"
+  }
+}

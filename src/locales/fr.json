@@ -1,0 +1,48 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "welcome": "Venez tous les jours pour profiter d'un nouveau WORDLE chaque jour!",
+    "hint": "Conseil:",
+    "caption": "Wordle de Xxx"
+  },
+  "help": {
+    "title": "COMMENT JOUER",
+    "content": "Devinez le WORLD en 6 essais.\n\nChaque supposition doit être un mot valide de 5 lettres. Appuyez sur le bouton \"Entrée\" pour soumettre. \n\nAprès chaque supposition, la couleur des tuiles changera pour montrer à quel point votre supposition était proche du mot.",
+    "example": "exemples",
+    "exp1": "RESTE",
+    "exp1_desc": "\"R\" est dans le mot et au bon endroit.",
+    "exp2": "LIVRE",
+    "exp2_desc": "\"I\" est dans le mot mais au mauvais endroit.",
+    "exp3": "AVANT",
+    "exp3_desc": "N n'est pas dans le mot mais à n'importe quel endroit."
+  },
+  "alert": {
+    "not_in_wordlist": "Pas dans la liste de mots",
+    "not_enough_letter": "Pas assez de lettres",
+    "splendid": "Splendide",
+    "awesome": "Bon travail",
+    "great": "Super",
+    "link_copied": "Lien URL copié",
+    "guide": "Devinez un mot de 5 lettres",
+    "not_a_valid_word": "Pas un mot valide",
+    "you_won": "TU AS GAGNÉ!",
+    "answer_with_owner": "le mot de Xxx est \"XXXXX\"",
+    "answer": "La réponse est {0}",
+    "you_failed": "Tu as échoué, le mot était \"XXXXX\"."
+  },
+  "win": {
+    "share": "PARTAGER",
+    "create_link": "CRÉER UN LIEN"
+  },
+  "stat": {
+    "statistics": "Statistiques",
+    "current_streak": "Séquence Actuelle",
+    "max_streak": "Séquence Max."
+  },
+  "share": {
+    "text3": "#Wordle #dailywordchallenge #Wordle Unlimited",
+    "text1": "Créez votre propre défi Wordle",
+    "text2": "TELECHARGER",
+    "customize": "PERSONNALISER"
+  }
+}

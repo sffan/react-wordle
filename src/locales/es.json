@@ -1,0 +1,48 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "welcome": "¡Ven todos los días a disfrutar de una nueva WORDLE cada día! ",
+    "hint": "Pista:",
+    "caption": "Wordle de Xxx"
+  },
+  "help": {
+    "title": "CÓMO JUGAR",
+    "content": "Hacer en WORDLE 6 intentos de adivinación.\n\nCada adivinación debe ser una palabra válida de 5 letras. Presione el tecla \"Entrar\" para enviar.\n\nDespués de cada intento, el color de las letras cambiará para mostrar cuán cerca estaba su intento de la palabra\"",
+    "example": "ejemplos",
+    "exp1": "CIELO",
+    "exp1_desc": "\"C\" está en la palabra y en el lugar correcto.",
+    "exp2": "GUSTA",
+    "exp2_desc": "\"U\" está en la palabra, pero en un lugar equivocado.",
+    "exp3": "HABLA",
+    "exp3_desc": "\"L\" no está en ninguna parte de la palabra."
+  },
+  "alert": {
+    "not_in_wordlist": "No está en la lista de palabras",
+    "not_enough_letter": "Letras insuficientes",
+    "splendid": "Espléndido",
+    "awesome": "Fantástico",
+    "great": "Genial",
+    "link_copied": "Link copiado",
+    "guide": "Prueba con una palabra de 5 letras",
+    "not_a_valid_word": "Não é uma palavra válida",
+    "you_won": "¡GANASTE!",
+    "answer_with_owner": "La palabra de Xxx es \"XXXXX\"",
+    "answer": "La respuesta es {0}",
+    "you_failed": "Has fallado, la palabra era \"XXXXX\""
+  },
+  "win": {
+    "share": "COMPARTIR",
+    "create_link": "CREAR ENLACE"
+  },
+  "stat": {
+    "statistics": "Estadísticas",
+    "current_streak": "Racha Actual",
+    "max_streak": "Mejor Racha"
+  },
+  "share": {
+    "text3": "#Wordle #DesafioDiariodePalabras #Wordle Ilimitado ",
+    "text1": "Crea tu propio desafío Wordle",
+    "text2": "DESCARGAR",
+    "customize": "PERSONALIZAR"
+  }
+}

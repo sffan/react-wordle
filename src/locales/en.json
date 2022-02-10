@@ -1,0 +1,48 @@
+{
+  "home": {
+    "title": "WORDLE",
+    "welcome": "Come over daily to enjoy a new WORDLE each day! ",
+    "hint": "Hint:",
+    "caption": "Xxx's Wordle"
+  },
+  "help": {
+    "title": "HOW TO PLAY",
+    "content": "Guess the WORDLE in 6 tries.\n\nEach guess must be a valid 5 letter word. Hit the “Enter” button to submit.\n\nAfter each guess, the color of the tils will change to show how close your guess was to the word.",
+    "example": "examples",
+    "exp1": "WEARY",
+    "exp1_desc": "“W” is in the word and in the correct spot.",
+    "exp2": "PILLS",
+    "exp2_desc": "“I” is in the word but in the wrong spot.",
+    "exp3": "VAGUE",
+    "exp3_desc": "“U” is not in the word but in any spot."
+  },
+  "alert": {
+    "not_in_wordlist": "Not in word list",
+    "not_enough_letter": "Not enough letter",
+    "splendid": "Splendid",
+    "awesome": "Awesome",
+    "great": "Great",
+    "link_copied": "Link copied",
+    "guide": "Guess a 5-letter word",
+    "not_a_valid_word": "Not a valid word",
+    "you_won": "YOU WON!",
+    "answer_with_owner": "Xxx’s word is “XXXXX”",
+    "answer": "The answer is {0}",
+    "you_failed": "You failed, the word was “XXXXX”"
+  },
+  "win": {
+    "share": "SHARE",
+    "create_link": "CREATE LINK"
+  },
+  "stat": {
+    "statistics": "Statistics",
+    "current_streak": "Current Streak",
+    "max_streak": "Max Streak"
+  },
+  "share": {
+    "text3": "#Wordle #dailywordchallenge #Wordle Unlimited",
+    "text1": "Create Your Own Wordle Challenge",
+    "text2": "DOWNLOAD",
+    "customize": "CUSTOMIZE"
+  }
+}

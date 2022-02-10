@@ -1,7 +1,7 @@
 import { getStatuses } from '../../lib/statuses'
 import { Key } from './Key'
 import { useEffect } from 'react'
-import { ENTER_TEXT, DELETE_TEXT } from '../../constants/strings'
+import { ENTER_TEXT } from '../../constants/strings'
 
 type Props = {
   onChar: (value: string) => void
@@ -87,7 +87,7 @@ export const Keyboard = ({
           />
         ))}
         <Key width={65.4} value="DELETE" onClick={onClick}>
-          {DELETE_TEXT}
+          <img src="/img/ic_delete.png" alt="Del" className="del-btn"/>
         </Key>
       </div>
     </div>

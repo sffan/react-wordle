@@ -5,21 +5,14 @@ import {
   MoonIcon,
 } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
+import i18n from './i18n'
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
 import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
-import {
-  GAME_TITLE,
-  WIN_MESSAGES,
-  GAME_COPIED_MESSAGE,
-  ABOUT_GAME_MESSAGE,
-  NOT_ENOUGH_LETTERS_MESSAGE,
-  WORD_NOT_FOUND_MESSAGE,
-  CORRECT_WORD_MESSAGE,
-} from './constants/strings'
+import { ABOUT_GAME_MESSAGE } from './constants/strings'
 import {
   MAX_WORD_LENGTH,
   MAX_CHALLENGES,
@@ -58,6 +51,7 @@ function App() {
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
+    //while(!solution){}
     const loaded = loadGameStateFromLocalStorage()
     if (loaded?.solution !== solution) {
       return []
@@ -93,6 +87,11 @@ function App() {
 
   useEffect(() => {
     if (isGameWon) {
+      let WIN_MESSAGES = [
+        i18n.t('alert.splendid'),
+        i18n.t('alert.awesome'),
+        i18n.t('alert.great'),
+      ]
       setTimeout(() => {
         setSuccessAlert(
           WIN_MESSAGES[Math.floor(Math.random() * WIN_MESSAGES.length)]
@@ -174,9 +173,9 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-8 mt-4">
-        <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
-          {GAME_TITLE}
+      <div className="flex w-80 mx-auto items-center mb-4 mt-4">
+        <h1 className="text-3xl ml-2.5 grow font-bold dark:text-white">
+          {i18n.t('home.title')}
         </h1>
         {isDarkMode ? (
           <SunIcon
@@ -222,7 +221,7 @@ function App() {
         isGameLost={isGameLost}
         isGameWon={isGameWon}
         handleShare={() => {
-          setSuccessAlert(GAME_COPIED_MESSAGE)
+          setSuccessAlert(i18n.t('alert.link_copied'))
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
       />
@@ -239,12 +238,18 @@ function App() {
         {ABOUT_GAME_MESSAGE}
       </button>
 
-      <Alert message={NOT_ENOUGH_LETTERS_MESSAGE} isOpen={isNotEnoughLetters} />
       <Alert
-        message={WORD_NOT_FOUND_MESSAGE}
+        message={i18n.t('alert.not_enough_letter')}
+        isOpen={isNotEnoughLetters}
+      />
+      <Alert
+        message={i18n.t('alert.not_in_wordlist')}
         isOpen={isWordNotFoundAlertOpen}
       />
-      <Alert message={CORRECT_WORD_MESSAGE(solution)} isOpen={isGameLost} />
+      <Alert
+        message={i18n.t('alert.answer').format(solution)}
+        isOpen={isGameLost}
+      />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}

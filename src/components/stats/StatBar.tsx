@@ -2,9 +2,8 @@ import { GameStats } from '../../lib/localStorage'
 import {
   TOTAL_TRIES_TEXT,
   SUCCESS_RATE_TEXT,
-  CURRENT_STREAK_TEXT,
-  BEST_STREAK_TEXT,
 } from '../../constants/strings'
+import i18n from '../../i18n'
 
 type Props = {
   gameStats: GameStats
@@ -30,8 +29,8 @@ export const StatBar = ({ gameStats }: Props) => {
     <div className="flex justify-center my-2">
       <StatItem label={TOTAL_TRIES_TEXT} value={gameStats.totalGames} />
       <StatItem label={SUCCESS_RATE_TEXT} value={`${gameStats.successRate}%`} />
-      <StatItem label={CURRENT_STREAK_TEXT} value={gameStats.currentStreak} />
-      <StatItem label={BEST_STREAK_TEXT} value={gameStats.bestStreak} />
+      <StatItem label={i18n.t("stat.current_streak")} value={gameStats.currentStreak} />
+      <StatItem label={i18n.t("stat.max_streak")} value={gameStats.bestStreak} />
     </div>
   )
 }

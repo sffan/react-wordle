@@ -22,16 +22,16 @@ export const Cell = ({
   const animationDelay = `${position * REVEAL_TIME_MS}ms`
 
   const classes = classnames(
-    'w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-4xl font-bold rounded dark:text-white',
+    'w-12 h-12 border-solid flex items-center justify-center mx-0.5 text-2xl font-bold rounded-xl dark:text-white',
     {
-      'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-600':
+      'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-600 border-2 cell-empty':
         !status,
       'border-black dark:border-slate-100': value && !status,
-      'absent shadowed bg-slate-400 dark:bg-slate-700 text-white border-slate-400 dark:border-slate-700':
+      'absent shadowed bg-slate-400 dark:bg-slate-700 text-white border-slate-400 dark:border-slate-700 cell-absent':
         status === 'absent',
-      'correct shadowed bg-green-500 text-white border-green-500':
+      'correct shadowed bg-green-500 text-white border-green-500 cell-correct':
         status === 'correct',
-      'present shadowed bg-yellow-500 text-white border-yellow-500':
+      'present shadowed bg-yellow-500 text-white border-yellow-500 cell-present':
         status === 'present',
       'cell-fill-animation': isFilled,
       'cell-reveal': shouldReveal,
@@ -46,3 +46,22 @@ export const Cell = ({
     </div>
   )
 }
+
+
+
+/*
+export const Cell = ({ value, status }: Props) => {
+  const classes = classnames(
+    'w-12 h-12 flex items-center justify-center mx-0.5 text-2xl rounded-xl',
+    {
+      'border-slate-200 border-solid border-2 cell-empty': !status,
+      'border-black': value && !status,
+      'bg-slate-400 text-white border-slate-400 cell-absent': status === 'absent',
+      'bg-green-500 text-white border-green-500 cell-correct': status === 'correct',
+      'bg-yellow-500 text-white border-yellow-500 cell-present': status === 'present',
+      'cell-animation': !!value,
+    }
+  )
+  return <div className={classes}>{value}</div>
+}
+*/
