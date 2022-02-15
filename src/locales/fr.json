@@ -1,13 +1,14 @@
 {
   "home": {
-    "title": "WORDLE",
-    "welcome": "Venez tous les jours pour profiter d'un nouveau WORDLE chaque jour!",
+    "title": "Palora",
+    "welcome": "Venez tous les jours pour profiter d'un nouveau Palora chaque jour!",
     "hint": "Conseil:",
-    "caption": "Wordle de Xxx"
+    "caption": "Palora de Xxx",
+    "about": "Sur le jeu"
   },
   "help": {
     "title": "COMMENT JOUER",
-    "content": "Devinez le WORLD en 6 essais.\n\nChaque supposition doit être un mot valide de 5 lettres. Appuyez sur le bouton \"Entrée\" pour soumettre. \n\nAprès chaque supposition, la couleur des tuiles changera pour montrer à quel point votre supposition était proche du mot.",
+    "content": "Devinez le Palora en 6 essais.\n\nChaque supposition doit être un mot valide de 5 lettres. Appuyez sur le bouton \"Entrée\" pour soumettre. \n\nAprès chaque supposition, la couleur des tuiles changera pour montrer à quel point votre supposition était proche du mot.",
     "example": "exemples",
     "exp1": "RESTE",
     "exp1_desc": "\"R\" est dans le mot et au bon endroit.",
@@ -26,8 +27,8 @@
     "guide": "Devinez un mot de 5 lettres",
     "not_a_valid_word": "Pas un mot valide",
     "you_won": "TU AS GAGNÉ!",
-    "answer_with_owner": "le mot de Xxx est \"XXXXX\"",
-    "answer": "La réponse est {0}",
+    "answer_with_owner": "le mot de xxx est \"XXXXX\"",
+    "answer": "La réponse est \"{0}\"",
     "you_failed": "Tu as échoué, le mot était \"XXXXX\"."
   },
   "win": {
@@ -37,11 +38,15 @@
   "stat": {
     "statistics": "Statistiques",
     "current_streak": "Séquence Actuelle",
-    "max_streak": "Séquence Max."
+    "max_streak": "Séquence Max.",
+    "records": "Registres",
+    "new_word_time": "Nouveau mot à",
+    "total_tries": "total de tentatives",
+    "success_rate": "Taux de réussite"
   },
   "share": {
-    "text3": "#Wordle #dailywordchallenge #Wordle Unlimited",
-    "text1": "Créez votre propre défi Wordle",
+    "text3": "#Palora #dailywordchallenge #Palora Unlimited",
+    "text1": "Créez votre propre défi Palora",
     "text2": "TELECHARGER",
     "customize": "PERSONNALISER"
   }

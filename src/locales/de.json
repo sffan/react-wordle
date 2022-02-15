@@ -1,13 +1,14 @@
 {
   "home": {
-    "title": "WORDLE",
-    "welcome": "Komm täglich vorbei, um jeden Tag ein neues WORDLE zu genießen!",
+    "title": "Voortle",
+    "welcome": "Komm täglich vorbei, um jeden Tag ein neues Voortle zu genießen!",
     "hint": "Hinweis:",
-    "caption": "Wordle von Xxx"
+    "caption": "Voortle von Xxx",
+    "about": "Über dieses Spiel"
   },
   "help": {
     "title": "SPIELANLEITUNG",
-    "content": "Errate das WORDLE in 6 Versuchen.\n\nJede Vermutung muss ein gültiges Wort mit 5 Buchstaben sein. Drücken Sie zum Absenden auf die Schaltfläche „Enter“.\n\nNach jedem Raten ändert sich die Farbe der Tils, um anzuzeigen, wie nah Ihre Vermutung am Wort war.",
+    "content": "Errate das Voortle in 6 Versuchen.\n\nJede Vermutung muss ein gültiges Wort mit 5 Buchstaben sein. Drücken Sie zum Absenden auf die Schaltfläche „Enter“.\n\nNach jedem Raten ändert sich die Farbe der Tils, um anzuzeigen, wie nah Ihre Vermutung am Wort war.",
     "example": "Beispiele",
     "exp1": "SEHEN",
     "exp1_desc": "\"S\" steht im Wort und an der richtigen Stelle.",
@@ -26,8 +27,8 @@
     "guide": "Erraten Sie ein Wort mit 5 Buchstaben",
     "not_a_valid_word": "Kein gültiges Wort",
     "you_won": "DU HAST GEWONNEN!",
-    "answer_with_owner": "Das Wort des Xxx ist \"XXXXX\"",
-    "answer": "Die Antwort ist {0}",
+    "answer_with_owner": "Das Wort des xxx ist \"XXXXX\"",
+    "answer": "Die Antwort ist „{0}“",
     "you_failed": "Du bist durchgefallen, das Wort war \"XXXXX\"."
   },
   "win": {
@@ -37,10 +38,14 @@
   "stat": {
     "statistics": "Statistiken",
     "current_streak": "Aktueller Streifzug",
-    "max_streak": "Max. Streifen"
+    "max_streak": "Max. Streifen",
+    "records": "Datensätze ",
+    "new_word_time": "Neues Wort in",
+    "total_tries": "Versuche insgesamt",
+    "success_rate": "Erfolgsquote"
   },
   "share": {
-    "text3": "#Wordle #dailywordchallenge #Wordle Unlimited",
+    "text3": "#Voortle #dailywordchallenge #Voortle Unlimited",
     "text1": "Erstellen Sie Ihr eigenes Worldle",
     "text2": "HERUNTERLADEN",
     "customize": "Erschaffe mein eigenes Wort"

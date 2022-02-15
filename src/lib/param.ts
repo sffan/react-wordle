@@ -18,4 +18,13 @@ export const getUrlParam = (name: string) => {
     return value
 }
 
-export const lang = getUrlParam("lang") || 'en';
+export var lang = getUrlParam("lang");
+if (!lang) {
+  if (window.location.host === 'palora.me'){
+    lang = 'pt';
+  } else if (window.location.host === 'voortle.com'){
+    lang = 'de';
+  } else {
+    lang = 'en';
+  }
+}

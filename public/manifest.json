@@ -1,6 +1,11 @@
 {
-  "short_name": "Game",
-  "name": "Game",
+  "short_name": "iDailyWord",
+  "name": "iDailyWord",
+  "start_url": ".",
+  "display": "standalone",
+  "description": "Come over daily to enjoy a new WORDLE each day!",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +22,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }

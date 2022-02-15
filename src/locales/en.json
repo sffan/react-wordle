@@ -1,13 +1,14 @@
 {
   "home": {
-    "title": "WORDLE",
-    "welcome": "Come over daily to enjoy a new WORDLE each day! ",
+    "title": "iDailyWord",
+    "welcome": "Come over daily to enjoy a new WORD each day!",
     "hint": "Hint:",
-    "caption": "Xxx's Wordle"
+    "caption": "Xxx's Wordle",
+    "about": "About this game"
   },
   "help": {
     "title": "HOW TO PLAY",
-    "content": "Guess the WORDLE in 6 tries.\n\nEach guess must be a valid 5 letter word. Hit the “Enter” button to submit.\n\nAfter each guess, the color of the tils will change to show how close your guess was to the word.",
+    "content": "Guess the WORD in 6 tries.\n\nEach guess must be a valid 5 letter word. Hit the “Enter” button to submit.\n\nAfter each guess, the color of the tils will change to show how close your guess was to the word.",
     "example": "examples",
     "exp1": "WEARY",
     "exp1_desc": "“W” is in the word and in the correct spot.",
@@ -27,7 +28,7 @@
     "not_a_valid_word": "Not a valid word",
     "you_won": "YOU WON!",
     "answer_with_owner": "Xxx’s word is “XXXXX”",
-    "answer": "The answer is {0}",
+    "answer": "The answer is \"{0}\"",
     "you_failed": "You failed, the word was “XXXXX”"
   },
   "win": {
@@ -37,7 +38,11 @@
   "stat": {
     "statistics": "Statistics",
     "current_streak": "Current Streak",
-    "max_streak": "Max Streak"
+    "max_streak": "Max Streak",
+    "records": "Records",
+    "new_word_time": "New word in",
+    "total_tries": "Total tries",
+    "success_rate": "Success rate"
   },
   "share": {
     "text3": "#Wordle #dailywordchallenge #Wordle Unlimited",

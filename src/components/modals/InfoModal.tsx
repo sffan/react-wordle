@@ -27,11 +27,11 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           let cell;
           if(i===0){
             cell = <Cell value={letter} status="correct"
-            key={letter}
+            key={i}
             />
           }else {
             cell = <Cell value={letter}
-            key={letter}
+            key={i}
             />
           }
           return cell
@@ -46,11 +46,11 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           let cell;
           if(i===1){
             cell = <Cell value={letter} status="present"
-            key={letter}
+            key={i}
             />
           }else {
             cell = <Cell value={letter}
-            key={letter}
+            key={i}
             />
           }
           return cell
@@ -65,11 +65,11 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           let cell;
           if(i===3){
             cell = <Cell value={letter} status="absent"
-            key={letter}
+            key={i}
             />
           }else {
             cell = <Cell value={letter}
-            key={letter}
+            key={i}
             />
           }
           return cell

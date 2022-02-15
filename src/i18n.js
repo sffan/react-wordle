@@ -9,6 +9,7 @@ import pt from './locales/pt.json'
 import it from './locales/it.json'
 import fr from './locales/fr.json'
 import de from './locales/de.json'
+//import nl from './locales/nl.json'
 
 const resources = {
   en: {
@@ -29,6 +30,9 @@ const resources = {
   de: {
     translation: de,
   },
+  /* nl: {
+    translation: nl,
+  }, */
 }
 
 //i18n.use(LanguageDetector) //嗅探当前浏览器语言 zh-CN

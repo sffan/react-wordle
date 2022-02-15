@@ -1,0 +1,53 @@
+{
+  "home": {
+    "title": "Voortle",
+    "welcome": " Kom elke dag om te genieten van een nieuwe Voortle elke dag!",
+    "hint": "Tip:",
+    "caption": "Voortle de Xxx",
+    "about": "Over het spel"
+  },
+  "help": {
+    "title": "HOE TE SPELEN",
+    "content": "Doe 6 gokpogingen in Voortle. Elke gok moet een geldig woord van 5 letters zijn. Druk op de \"Enter\" knop om te verzenden. Na elke proef zal de kleur van de letters veranderen om aan te geven hoe dicht uw proef bij het woord was.",
+    "example": "voorbeelden",
+    "exp1": "KLEUR",
+    "exp1_desc": "\"L\" is in het juiste woord en op de juiste plaats.",
+    "exp2": "ZWART",
+    "exp2_desc": "\"R\" staat in het woord, maar op de verkeerde plaats.",
+    "exp3": "GROEN",
+    "exp3_desc": "\"M\" staat nergens in het woord."
+  },
+  "alert": {
+    "not_in_wordlist": "Niet in de woordenlijst",
+    "not_enough_letter": "niet genoeg letters",
+    "splendid": "Schitterend",
+    "awesome": "Fantastisch",
+    "great": "Excellent",
+    "link_copied": "Gekopieerde link",
+    "guide": "Probeer een woord van 5 letters",
+    "not_a_valid_word": "geen geldig woord",
+    "you_won": "JIJ HEBT GEWONNEN!",
+    "answer_with_owner": "xxx's woord is \"XXXXX\"",
+    "answer": "Het antwoord is \"{0}\"",
+    "you_failed": "Je hebt gefaald, het woord was \"XXXXX\"."
+  },
+  "win": {
+    "share": "DEEL",
+    "create_link": "MAAK LINK"
+  },
+  "stat": {
+    "statistics": "Statistieken",
+    "current_streak": "Huidige reeks",
+    "max_streak": "Langste reeks",
+    "records": "records",
+    "new_word_time": "Nieuw woord om",
+    "total_tries": "Totale pogingen",
+    "success_rate": "Slaagkans"
+  },
+  "share": {
+    "text3": " #Voortle #dagelijksewoorduitdaging #Voortle Unlimited",
+    "text1": "Creëer je eigen Voortle-uitdaging",
+    "text2": "DOWNLOAD",
+    "customize": "PERSONALISEREN"
+  }
+}

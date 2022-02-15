@@ -1,7 +1,11 @@
 //import { lang } from './param'
-import { WORDS, VALIDGUESSES } from '../constants/words_en'
+//import { WORDS, VALIDGUESSES } from '../index'
 
-export var solution: string, solutionIndex: number, tomorrow: number;
+export var solution: string,
+           solutionIndex: number,
+           tomorrow: number;
+export var WORDS: string[];
+export var VALIDGUESSES: string[];
 /* export var WORDS: string[];
 export var VALIDGUESSES: string[]; */
 
@@ -23,24 +27,25 @@ export var VALIDGUESSES: string[]; */
 const { words, validGuesses } = await getWordOfDay() */
 
 //export const getWordOfDay = async () => {
-export const getWordOfDay = () => {
+export const getWordOfDay = (words: string[], validGuesses: string[]) => {
   /* WORDS = (await (await req('/rc/words_' + lang + '_5.txt')).text()).split(',');
   VALIDGUESSES = (await (await req('/rc/dict_' + lang + '_5.txt')).text()).split(','); */
 
   // Feb 9, 2022 Game Epoch
   //const epochMs = new Date(Date.UTC(2022, 1, 9, 0, 0, 0)).valueOf()
-  const epochMs = new Date().valueOf()
+  const epochMs = new Date('Feb 9, 2022 00:00:00').valueOf()
   const now = Date.now()
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
 
-  solution = WORDS[index % WORDS.length].toUpperCase();
+  solution = words[index % words.length].toUpperCase();
   solutionIndex = index;
   tomorrow = nextday;
-  console.log(solution, solutionIndex, tomorrow)
+  WORDS = words;
+  VALIDGUESSES = validGuesses;
+  //console.log(solution, solutionIndex, tomorrow);
 }
-getWordOfDay();
 
 export const isWordInWordList = (word: string) => {
   return (

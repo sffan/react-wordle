@@ -3,6 +3,7 @@ import {
   ChartBarIcon,
   SunIcon,
   MoonIcon,
+  ShareIcon,
 } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import i18n from './i18n'
@@ -12,7 +13,8 @@ import { Keyboard } from './components/keyboard/Keyboard'
 import { AboutModal } from './components/modals/AboutModal'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
-import { ABOUT_GAME_MESSAGE } from './constants/strings'
+import { shareStatus } from './lib/share'
+import { Ad } from './components/ad/Ad'
 import {
   MAX_WORD_LENGTH,
   MAX_CHALLENGES,
@@ -50,6 +52,18 @@ function App() {
   )
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
+  const [bannerImgId, setBannerImgId] = useState('2')
+  useEffect(() => {
+    setTimeout(() => {
+      setBannerImgId(bannerImgId === '1' ? '2' : '1')
+    }, 4000)
+  }, [bannerImgId])
+
+  /* const switchBanner = () => {
+    console.log(bannerImgId, bannerImgId === "1")
+    setBannerImgId(bannerImgId === "1" ? "2" : "1");
+  } */
+
   const [guesses, setGuesses] = useState<string[]>(() => {
     //while(!solution){}
     const loaded = loadGameStateFromLocalStorage()
@@ -66,6 +80,11 @@ function App() {
     return loaded.guesses
   })
 
+  useEffect(() => {
+    document.title = i18n.t('home.title')
+    document.getElementsByTagName('meta')[3].content =
+      i18n.t('home.description')
+  }, [])
   const [stats, setStats] = useState(() => loadStats())
 
   useEffect(() => {
@@ -179,22 +198,30 @@ function App() {
         </h1>
         {isDarkMode ? (
           <SunIcon
-            className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+            className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         ) : (
           <MoonIcon
-            className="h-6 w-6 mr-2 cursor-pointer"
+            className="h-6 w-6 mr-1 cursor-pointer"
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         )}
         <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
         <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
           onClick={() => setIsStatsModalOpen(true)}
+        />
+        <ShareIcon
+          className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
+          onClick={() => {
+            shareStatus(guesses, isGameLost)
+            setSuccessAlert(i18n.t('alert.link_copied'))
+            return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
+          }}
         />
       </div>
       <Grid
@@ -230,13 +257,23 @@ function App() {
         handleClose={() => setIsAboutModalOpen(false)}
       />
 
-      <button
+      {/* <button
         type="button"
         className="mx-auto mt-8 flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none"
         onClick={() => setIsAboutModalOpen(true)}
       >
         {ABOUT_GAME_MESSAGE}
-      </button>
+      </button> */}
+      <Ad
+        onTop={isGameWon || isGameLost}
+        imgId={'1'}
+        show={bannerImgId === '1'}
+      />
+      <Ad
+        onTop={isGameWon || isGameLost}
+        imgId={'2'}
+        show={bannerImgId === '2'}
+      />
 
       <Alert
         message={i18n.t('alert.not_enough_letter')}

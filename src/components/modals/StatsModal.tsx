@@ -6,8 +6,6 @@ import { shareStatus } from '../../lib/share'
 import { tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
-  GUESS_DISTRIBUTION_TEXT,
-  NEW_WORD_TEXT,
   capitalizeFirstLetter,
 } from '../../constants/strings'
 import i18n from '../../i18n'
@@ -50,13 +48,13 @@ export const StatsModal = ({
     >
       <StatBar gameStats={gameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-        {GUESS_DISTRIBUTION_TEXT}
+        {i18n.t("stat.records")}
       </h4>
       <Histogram gameStats={gameStats} />
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
           <div>
-            <h5>{NEW_WORD_TEXT}</h5>
+            <h5>{i18n.t("stat.new_word_time")}</h5>
             <Countdown
               className="text-lg font-medium text-gray-900 dark:text-gray-100"
               date={tomorrow}
