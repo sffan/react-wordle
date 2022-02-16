@@ -12,7 +12,7 @@ export const shareStatus = (guesses: string[], lost: boolean) => {
   copy(
     `${i18n.t("home.title")} ${solutionIndex+1} ${lost ? 'X' : guesses.length}/6\n\n` +
       generateEmojiGrid(guesses) +
-    '\nhttps://bit.ly/3uEjksF'
+    '\n' + window.location.href
   );
 }
 

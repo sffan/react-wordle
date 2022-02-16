@@ -4,13 +4,14 @@ import {
   SunIcon,
   MoonIcon,
   ShareIcon,
+  GlobeIcon,
 } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import i18n from './i18n'
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
 import { Keyboard } from './components/keyboard/Keyboard'
-import { AboutModal } from './components/modals/AboutModal'
+import { I18nModal } from './components/modals/I18nModel'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { shareStatus } from './lib/share'
@@ -38,7 +39,7 @@ function App() {
   const [currentGuess, setCurrentGuess] = useState('')
   const [isGameWon, setIsGameWon] = useState(false)
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
-  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
+  const [isI18nModalOpen, setIsI18nModalOpen] = useState(false)
   const [isNotEnoughLetters, setIsNotEnoughLetters] = useState(false)
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false)
   const [isWordNotFoundAlertOpen, setIsWordNotFoundAlertOpen] = useState(false)
@@ -52,11 +53,11 @@ function App() {
   )
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
-  const [bannerImgId, setBannerImgId] = useState('2')
+  const [bannerImgId, setBannerImgId] = useState('1')
   useEffect(() => {
     setTimeout(() => {
-      setBannerImgId(bannerImgId === '1' ? '2' : '1')
-    }, 4000)
+      setBannerImgId(bannerImgId === '2' ? '1' : '2')
+    }, 20000)
   }, [bannerImgId])
 
   /* const switchBanner = () => {
@@ -207,6 +208,10 @@ function App() {
             onClick={() => handleDarkMode(!isDarkMode)}
           />
         )}
+        <GlobeIcon
+          className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
+          onClick={() => setIsI18nModalOpen(true)}
+        />
         <InformationCircleIcon
           className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
@@ -252,9 +257,9 @@ function App() {
           return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
         }}
       />
-      <AboutModal
-        isOpen={isAboutModalOpen}
-        handleClose={() => setIsAboutModalOpen(false)}
+      <I18nModal
+        isOpen={isI18nModalOpen}
+        handleClose={() => setIsI18nModalOpen(false)}
       />
 
       {/* <button

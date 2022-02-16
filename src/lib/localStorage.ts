@@ -1,4 +1,7 @@
-const gameStateKey = 'gameState'
+import { lang } from './param'
+
+
+const gameStateKey = 'gameState_' + lang;
 
 type StoredGameState = {
   guesses: string[]
@@ -14,7 +17,7 @@ export const loadGameStateFromLocalStorage = () => {
   return state ? (JSON.parse(state) as StoredGameState) : null
 }
 
-const gameStatKey = 'gameStats'
+const gameStatKey = 'gameStats_' + lang;
 
 export type GameStats = {
   winDistribution: number[]
