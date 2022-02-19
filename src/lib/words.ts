@@ -33,7 +33,12 @@ export const getWordOfDay = (words: string[], validGuesses: string[]) => {
 
   // Feb 9, 2022 Game Epoch
   //const epochMs = new Date(Date.UTC(2022, 1, 9, 0, 0, 0)).valueOf()
-  const epochMs = new Date('Feb 9, 2022 00:00:00').valueOf()
+  let date = new Date();
+  // 2月19日开始，从第51个词开始轮换
+  let epochMs = new Date('Dec 30, 2021 00:00:00').valueOf();
+  if (date.getFullYear() === 2022 && date.getMonth() === 1 && date.getDate() === 18) {
+    epochMs = new Date('Feb 9, 2022 00:00:00').valueOf()
+  }
   const now = Date.now()
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
