@@ -15,7 +15,7 @@ import { I18nModal } from './components/modals/I18nModel'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { shareStatus } from './lib/share'
-import { Ad } from './components/ad/Ad'
+//import { Ad } from './components/ad/Ad'
 import {
   MAX_WORD_LENGTH,
   MAX_CHALLENGES,
@@ -53,12 +53,12 @@ function App() {
   )
   const [successAlert, setSuccessAlert] = useState('')
   const [isRevealing, setIsRevealing] = useState(false)
-  const [bannerImgId, setBannerImgId] = useState('1')
+  /* const [bannerImgId, setBannerImgId] = useState('1')
   useEffect(() => {
     setTimeout(() => {
       setBannerImgId(bannerImgId === '2' ? '1' : '2')
     }, 20000)
-  }, [bannerImgId])
+  }, [bannerImgId]) */
 
   /* const switchBanner = () => {
     console.log(bannerImgId, bannerImgId === "1")
@@ -193,7 +193,7 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-4 mt-4">
+      <div className="flex w-80 mx-auto items-center mb-6 mt-4">
         <h1 className="text-3xl ml-2.5 grow font-bold dark:text-white">
           {i18n.t('home.title')}
         </h1>
@@ -223,7 +223,11 @@ function App() {
         <ShareIcon
           className="h-6 w-6 mr-1 cursor-pointer dark:stroke-white"
           onClick={() => {
-            shareStatus(guesses, isGameLost)
+            shareStatus(
+              guesses,
+              isGameLost,
+              'gtag_report_conversion_homepage_share'
+            )
             setSuccessAlert(i18n.t('alert.link_copied'))
             return setTimeout(() => setSuccessAlert(''), ALERT_TIME_MS)
           }}
@@ -269,7 +273,7 @@ function App() {
       >
         {ABOUT_GAME_MESSAGE}
       </button> */}
-      <Ad
+      {/* <Ad
         onTop={isGameWon || isGameLost}
         imgId={'1'}
         show={bannerImgId === '1'}
@@ -278,7 +282,7 @@ function App() {
         onTop={isGameWon || isGameLost}
         imgId={'2'}
         show={bannerImgId === '2'}
-      />
+      /> */}
 
       <Alert
         message={i18n.t('alert.not_enough_letter')}

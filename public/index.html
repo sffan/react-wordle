@@ -38,6 +38,40 @@
       gtag('event', 'conversion', {'send_to': 'AW-625715352/uUJfCMSWz6ADEJjRrqoC'});
     </script>
 
+  <!-- Event snippet for IDAILYWORD-HOME-PAGE-SHARE conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  window.gtag_report_conversion_homepage_share = function(url) {
+    var callback = function () {
+      /* if (typeof(url) != 'undefined') {
+        window.location = url;
+      } */
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-625715352/CKdaCOjKyqQDEJjRrqoC',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
+  <!-- Event snippet for IDAILYWORD-DATA-SHARE conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion_data_share(url) {
+    var callback = function () {
+      /* if (typeof(url) != 'undefined') {
+        window.location = url;
+      } */
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-625715352/p7NtCJrYg6UDEJjRrqoC',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
     <script>
       /(pad|pod|iPad|iPod|iOS|SM-T)/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
     </script>

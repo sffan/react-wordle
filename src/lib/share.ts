@@ -4,8 +4,10 @@ import { solutionIndex } from './words'
 import { lang } from './param'
 //import { GAME_TITLE } from '../constants/strings'
 import i18n from '../i18n'
+export const GA_TRACKING_ID = 'AW-625715352'
 
-export const shareStatus = (guesses: string[], lost: boolean) => {
+
+export const shareStatus = (guesses: string[], lost: boolean, conversion_func: string) => {
   /* navigator.clipboard.writeText(
     `${i18n.t("home.title")} ${solutionIndex} ${lost ? 'X' : guesses.length}/6\n\n` +
       generateEmojiGrid(guesses)
@@ -23,6 +25,10 @@ export const shareStatus = (guesses: string[], lost: boolean) => {
       generateEmojiGrid(guesses) + '\n' + href
   );
   fetch('/stat/click_share/?lang=' + lang + '&f=' + randStr);
+  //window.gtag_report_conversion_homepage_share(href);
+  eval(conversion_func + "('" + href + "')");
+  //alert("needreplace2eval" + conversion_func + "('" + href + "')")
+  
 }
 
 export const generateEmojiGrid = (guesses: string[]) => {

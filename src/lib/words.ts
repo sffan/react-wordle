@@ -49,7 +49,7 @@ export const getWordOfDay = (words: string[], validGuesses: string[]) => {
   tomorrow = nextday;
   WORDS = words;
   VALIDGUESSES = validGuesses;
-  //console.log(solution, solutionIndex, tomorrow);
+  console.log(solution, solutionIndex, tomorrow);
 }
 
 export const isWordInWordList = (word: string) => {
