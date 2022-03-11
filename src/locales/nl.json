@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "Voortle",
-    "welcome": " Kom elke dag om te genieten van een nieuwe Voortle elke dag!",
+    "page_title": "Voortle",
+    "description": "Kom elke dag om te genieten van een nieuwe Voortle elke dag!",
+    "keywords": "wordle,unlimited,today,word",
     "hint": "Tip:",
     "caption": "Voortle de Xxx",
     "about": "Over het spel"

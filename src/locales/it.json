@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "Palora",
-    "welcome": "Vieni ogni giorno per goderti un nuovo Palora ogni giorno!",
+    "page_title": "Palora – Il più grande gioco Wordle d'Italia",
+    "description": "Indovina 1 parola in 6 tentativi e crea puzzle con gli amici.  Un nuovo puzzle ti aspetta ogni giorno.",
+    "keywords": "wordle,unlimited,archive,nyt,today",
     "hint": "Suggerimento:",
     "caption": "Palora de Xxx",
     "about": "Sul gioco"

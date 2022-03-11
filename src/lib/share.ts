@@ -20,14 +20,18 @@ export const shareStatus = (guesses: string[], lost: boolean, conversion_func: s
   } else {
     href += '?f=' + randStr;
   }
+  let title = i18n.t("home.title");
+  if (title === "Palora") {
+    title = "Palora.me"
+  }
   copy(
-    `${i18n.t("home.title")} ${solutionIndex+1} ${lost ? 'X' : guesses.length}/6\n\n` +
+    `${title} ${solutionIndex+1} ${lost ? 'X' : guesses.length}/6\n\n` +
       generateEmojiGrid(guesses) + '\n' + href
   );
   fetch('/stat/click_share/?lang=' + lang + '&f=' + randStr);
   //window.gtag_report_conversion_homepage_share(href);
-  eval(conversion_func + "('" + href + "')");
-  //alert("needreplace2eval" + conversion_func + "('" + href + "')")
+  //eval(conversion_func + "('" + href + "')");
+  alert("needreplace2eval" + conversion_func + "('" + href + "')")
   
 }
 

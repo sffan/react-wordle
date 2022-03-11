@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "Voortle",
-    "welcome": "Komm täglich vorbei, um jeden Tag ein neues Voortle zu genießen!",
+    "page_title": "Voortle – Das größte deutsche Wordle-Spiel",
+    "description": "Errate das versteckte Wort mit 6 Versuchen& erstelle dein Rätsel für Freunde. Jeden Tag wartet ein neues Rätsel auf dich.",
+    "keywords": "Wordle,wördle,Wort,6mal5,wördl",
     "hint": "Hinweis:",
     "caption": "Voortle von Xxx",
     "about": "Über dieses Spiel"

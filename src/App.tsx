@@ -82,9 +82,10 @@ function App() {
   })
 
   useEffect(() => {
-    document.title = i18n.t('home.title')
+    document.title = i18n.t('home.page_title')
     document.getElementsByTagName('meta')[3].content =
       i18n.t('home.description')
+    document.getElementsByTagName('meta')[4].content = i18n.t('home.keywords')
   }, [])
   const [stats, setStats] = useState(() => loadStats())
 

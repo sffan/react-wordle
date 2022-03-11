@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "Palora",
-    "welcome": "¡Ven todos los días a disfrutar de una nueva Palora cada día! ",
+    "page_title": "Palora – El mayor juego de Wordle en español",
+    "description": "Adivina palabra en 6 intentos &crea tu propio rompecabezas con amigos. Un nuevo rompecabezas te espera cada día.",
+    "keywords": "wordle,unlimited,tildes,palabra",
     "hint": "Pista:",
     "caption": "Palora de Xxx",
     "about": "Sobre el juego"

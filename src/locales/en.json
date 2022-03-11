@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "iDailyWord",
-    "welcome": "Come over daily to enjoy a new WORD each day!",
+    "page_title": "iDailyWord",
+    "description": "Come over daily to enjoy a new WORD each day!",
+    "keywords": "wordle,unlimited,today,word",
     "hint": "Hint:",
     "caption": "Xxx's Wordle",
     "about": "About this game"

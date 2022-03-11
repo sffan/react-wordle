@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "Palora",
-    "welcome": "Venez tous les jours pour profiter d'un nouveau Palora chaque jour!",
+    "page_title": "Palora – Le plus grand jeu de Wordle français",
+    "description": "Devinez 1 mot en 6 essais& créez votre puzzle pour vos amis.  Chaque jour, un nouveau puzzle vous attend.",
+    "keywords": "wordle,nyt,nytimes,archive,word",
     "hint": "Conseil:",
     "caption": "Palora de Xxx",
     "about": "Sur le jeu"

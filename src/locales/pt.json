@@ -1,7 +1,9 @@
 {
   "home": {
     "title": "Palora",
-    "welcome": "Venha todos os dias para desfrutar de uma nova Palora a cada dia! ",
+    "page_title": "Palora.me - Palavra Do Dia - Wordle em Portugues",
+    "description": "Adivinhe palavra em 6 tentativas e crie seu enigma com amigos. Um novo quebra-cabeça à sua espera cada dia.",
+    "keywords": "wordle,unlimited,today,word",
     "hint": "Dica:",
     "caption": "Palora de Xxx",
     "about": "Sobre o jogo"
