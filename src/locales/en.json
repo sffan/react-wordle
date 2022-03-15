@@ -34,7 +34,7 @@
     "you_failed": "You failed, the word was “XXXXX”"
   },
   "win": {
-    "share": "SHARE",
+    "share": "Share to challenge your friend!",
     "create_link": "CREATE LINK"
   },
   "stat": {

@@ -107,3 +107,8 @@ img.del-btn {
 .z-9999 {
   z-index: 9999;
 }
+.stat-share-btn {
+  background-color: #19a48b;
+  width: auto;
+  min-width: 80%;
+}
